@@ -5,17 +5,17 @@ completedtopics = []
 
 
 #read all the topics, add them to a temporary list
-topics = open("/Users/zacherylzy/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Desktop - Macbook Air/NUS/CCAs/Toastmasters/topics.txt", "r")
+topics = open("topics.txt", "r")
 for line in topics:
     alltopics.append(line.strip())
 
 #read the completed file first
-completed = open("/Users/zacherylzy/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Desktop - Macbook Air/NUS/CCAs/Toastmasters/completed.txt", "r")
+completed = open("completed.txt", "r")
 for lines in completed:
     completedtopics.append(lines.strip())
 
 #write to completed
-addcompleted = open("/Users/zacherylzy/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Desktop - Macbook Air/NUS/CCAs/Toastmasters/completed.txt", "a")
+addcompleted = open("completed.txt", "a")
 
 
 for i in range(len(alltopics)):
