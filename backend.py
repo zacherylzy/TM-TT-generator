@@ -1,3 +1,6 @@
+import streamlit
+
+
 from random import randint
 
 alltopics = []
@@ -30,11 +33,14 @@ for i in range(len(alltopics)):
     else: #already completed/found in completed, continue loop again
         continue
 
-"""
-for i in alltopics:
-    if i[-1] != "?":
-        print(i)
+
+#for i in alltopics:
+    #if i[-1] != "?":
+       # print(i)
 
 #add a random factor inside
-"""
+
+
+streamlit run your_script.py
+
 
