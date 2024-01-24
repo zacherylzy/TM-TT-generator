@@ -24,9 +24,9 @@ addcompleted = open("completed.txt", "a")
 
 for i in range(len(alltopics)):
     i = randint(0, len(alltopics))
-    print(i)
+    st.write(i)
     if alltopics[i] not in completedtopics:  #not yet completed/found in completed so break and print the i
-        print(alltopics[i])
+        st.write(alltopics[i])
         addcompleted.write(alltopics[i])
         addcompleted.write("\n")
         addcompleted.close()
@@ -38,5 +38,7 @@ for i in range(len(alltopics)):
 #for i in alltopics:
     #if i[-1] != "?":
        # print(i)
+
+#add a random factor inside
 
 #add a random factor inside
